@@ -1,0 +1,43 @@
+{
+    "manifest_version":          2,
+    "name":                      "TTV Clip Confirm",
+    "short_name":                "TTV CC",
+    "author":                    "ArgoWizbang",
+    "homepage_url":              "https://github.com/argowizbang/ttv-clip-confirm",
+    "developer":                 {
+        "name": "ArgoWizbang",
+        "url":  "https://github.com/argowizbang/ttv-clip-confirm"
+    },
+    "version":                   "0.1.0",
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ttv_clip_confirm@argowizbang.ttv"
+        }
+    },
+
+    "description":               "Adds a confirmation prompt when clipping Twitch streams/VODs to help reduce accidental clips.",
+
+    "icons":                     {
+        "16":  "img/logo-icons/icon-16.png",
+        "48":  "img/logo-icons/icon-48.png",
+        "96":  "img/logo-icons/icon-96.png",
+        "128": "img/logo-icons/icon-128.png"
+    },
+
+    "content_scripts":           [
+        {
+            "matches":       ["*://*.twitch.tv/*"],
+            "exclude_globs": ["*://api.twitch.tv/*"],
+            "css":           [ "src/css/style.css" ],
+            "js":            [
+                "vendor/browser-polyfill.js",
+                "src/js/content.js"
+            ]
+        }
+    ],
+
+    "permissions":               [
+        "*://*.twitch.tv/*"
+    ]
+}
