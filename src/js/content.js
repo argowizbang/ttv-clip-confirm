@@ -59,7 +59,7 @@
 
                   e.stopImmediatePropagation();
 
-                  let channelName   = document.getElementsByClassName( 'channel-info-content' )[0].getElementsByTagName( 'h1' )[0].textContent.trim();
+                  let channelName   = document.getElementsByClassName( 'channel-info-content' )[0] ? document.getElementsByClassName( 'channel-info-content' )[0].getElementsByTagName( 'h1' )[0].textContent.trim() : document.querySelector( '[data-test-selector="stream-info-card-component__title-link"]' ).textContent.trim();
 
                   document.getElementById( 'ttvcc-modal-content').innerHTML = 'Create a new <b>' + channelName + '</b> clip?';
 
@@ -135,7 +135,7 @@
                           closeModalSVG.g    = document.createElementNS( 'http://www.w3.org/2000/svg', 'g' );
                           closeModalSVG.path = document.createElementNS( 'http://www.w3.org/2000/svg', 'path' );
 
-                          closeModalSVG.svg.setAttribute( 'class', 'sc-fzqNJr hXQgjp' );
+                          closeModalSVG.svg.setAttribute( 'class', 'sc-fzqNJr gJlwEu hXQgjp' );
                           closeModalSVG.svg.setAttribute( 'width', '100%' );
                           closeModalSVG.svg.setAttribute( 'height', '100%' );
                           closeModalSVG.svg.setAttribute( 'version', '1.1' );
