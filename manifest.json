@@ -8,7 +8,7 @@
         "name": "ArgoWizbang",
         "url":  "https://github.com/argowizbang/ttv-clip-confirm"
     },
-    "version":                   "0.1.1",
+    "version":                   "0.1.2",
 
     "browser_specific_settings": {
         "gecko": {
