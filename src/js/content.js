@@ -135,7 +135,7 @@
                           closeModalSVG.g    = document.createElementNS( 'http://www.w3.org/2000/svg', 'g' );
                           closeModalSVG.path = document.createElementNS( 'http://www.w3.org/2000/svg', 'path' );
 
-                          closeModalSVG.svg.setAttribute( 'class', 'sc-fzqNJr gJlwEu hXQgjp' );
+                          closeModalSVG.svg.classList.value =  'ttvcc-svg-icon';
                           closeModalSVG.svg.setAttribute( 'width', '100%' );
                           closeModalSVG.svg.setAttribute( 'height', '100%' );
                           closeModalSVG.svg.setAttribute( 'version', '1.1' );
